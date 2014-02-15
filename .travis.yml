@@ -11,7 +11,7 @@ before_install:
   - haxelib setup ~/haxelib
   - haxelib install HaxePunk                           # install haxepunk
   - echo yes | haxelib run HaxePunk setup
-  - echo y | echo sdk |echo y | echo ndk | echo y | echo ant |echo n |lime setup android
-  - lime test neko
+  #- echo y | echo sdk |echo y | echo ndk | echo y | echo ant |echo n |lime setup android
+  - lime test android
   - mkdir bin                                          # create an output folder if needed
 script: "ci/run.sh"

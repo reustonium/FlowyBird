@@ -1,4 +1,5 @@
 language: java
 
-chmod +x "/.run.sh"
+before_install:
+  - chmod +x "/.run.sh"
 script: "./run.sh"

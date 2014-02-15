@@ -10,6 +10,6 @@ before_install:
   - mkdir ~/haxelib                                    # create a folder for installing haxelib
   - haxelib setup ~/haxelib
   - haxelib install HaxePunk                           # install haxepunk
-  - haxelib run HaxePunk setup
+  - echo yes | haxelib run HaxePunk setup
   - mkdir bin                                          # create an output folder if needed
 script: "ci/run.sh"
